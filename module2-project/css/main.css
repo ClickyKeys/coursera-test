@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    margin: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Main header formatting*/
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.75em;
+}
+
+/*Section header formatting*/
+h4 {
+    position: absolute;
+    right: 0;
+    width: 125px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+
+/*Section paragraph formatting*/
+p {
+    margin: 45px 20px 20px 20px;
+    font-size: 1em;
+
+}
+
+/*Unique background colors for each section header*/
+.section1 h4 {
+    background-color: rgb(252, 168, 168);
+}
+
+.section2 h4 {
+    background-color: rgb(241, 235, 137);
+}
+
+.section3 h4 {
+    background-color: rgb(121, 231, 106);
+}
+
+.row {
+    width: 100%;
+}
+
+/*Positioning, setting bg and border, and adding margins to create space between each section*/
+.section1, .section2, .section3 {
+    position: relative;
+    margin: 2% 2% 2% 2%;
+    border: 1px solid black;
+    background-color: rgb(190, 237, 243);
+}
+
+/*Media Sizes for Responsive Layout
+/*will subtract 4% from width to account for left and right margins set above*/
+/*Large Devices*/
+@media (min-width: 992px) {
+    .section1, .section2, .section3 {
+        float: left;
+    }
+    .section1, .section2, .section3{
+        width: 29.33%;
+    }
+}
+
+/*Medium Devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .section1, .section2, .section3{
+        float: left;
+    }
+    .section1, .section2{
+        width: 46%;
+    }
+    .section3 {
+        width: 96%;
+    }
+}
+
+/*Small Devices*/
+@media (max-width: 767px) {
+    .section1, .section2, .section3{
+        float: left;
+    }
+    .section1, .section2, .section3 {
+        width: 96%;
+    }
+}
