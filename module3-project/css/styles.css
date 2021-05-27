@@ -1,0 +1,83 @@
+body {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/** HEADER **/
+#header-nav .container-fluid {
+    padding: 0;
+}
+
+#header-nav {
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+#header-nav .container-fluid .navbar-header {
+    margin: 15px 15px 15px 30px;
+}
+  
+.navbar-left h1 { /* Restaurant name */
+    margin-top: 15px;
+    color: black;
+    font-size: 2em;
+    width: auto;
+    text-decoration: none;
+}
+
+.navbar-left a:hover, .navbar-left a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin: 0;
+    border-color: none;
+}
+
+#nav-list a {
+    text-align: center;
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+#nav-list a:hover {
+    font-weight: 800;
+    color: white;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -50px;
+}
+/** END HEADER **/
+
+/** MAIN CONTENT **/
+#main-content h2, h3, p {
+    padding: 10px;
+    margin: 0;
+}
+
+#main-content .row {
+    padding: 15px;
+}
+
+.menu-item {
+    padding: 15px;
+}
+
+#spacing {
+    height: 1000px;
+    background-color: lightblue;
+}
+/** END MAIN CONTENT **/
